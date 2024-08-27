@@ -1,0 +1,102 @@
+// https://colorpicker.me/#c4d3db
+$theme-colors: (
+        "transparent": rgba(0,0,0,0),
+        "white": #FFFFFF,
+        "bright": #F0F0F0,
+        "grey": #d1d3db,
+        "dark": #788186,
+        "darkgrey": #a3a2ad,
+        "darker": #2c2f31,
+        "black": #060606,
+        "red": #FF4a4a,
+        "purple": #8472ef,
+        "dark-purple": #4f458a,
+        "highlight": #c7c2e5,
+        "highlightnt": #716f84
+);
+// #414d60 #19202a Maybe?
+
+$body-color: map-get($theme-colors, "darker");
+$body-bg: map-get($theme-colors, "grey");
+$text-muted: #6c757d;
+
+$link-decoration: none;
+$link-color: map-get($theme-colors, "highlightnt");
+$link-hover-color: rgba($link-color, 0.75) !important;
+
+$btn-link-color: $link-color;
+$btn-link-hover-color: $link-hover-color;
+$btn-outline-secondary-link-hover-color: $link-hover-color;
+$btn-hover-border-shade-amount:   20%;
+$btn-hover-border-tint-amount:    10%;
+
+$card-border-width: 0px;
+
+
+
+
+// Navbar colors
+$nav-tabs-link-active-bg: map-get($theme-colors, "darker");
+$nav-tabs-border-color: map-get($theme-colors, "grey");
+$nav-tabs-link-active-color: $nav-tabs-border-color;
+$nav-tabs-link-active-border-color: #7d98ec00;
+$nav-tabs-link-hover-border-color: #7d98ec00;
+
+// Pills
+$nav-pills-link-active-bg: map-get($theme-colors, "darker");
+
+// shadow
+$box-shadow: 0px 0px 2.5rem 1rem #0606065c;
+
+// Table
+$table-variants: (
+        "transparent": map-get($theme-colors, "transparent"),
+        "white":       map-get($theme-colors, "white"),
+        "bright":      map-get($theme-colors, "bright"),
+        "grey":        map-get($theme-colors, "grey"),
+        "dark":        map-get($theme-colors, "dark"),
+        "darkgrey":    map-get($theme-colors, "darkgrey"),
+        "darker":      map-get($theme-colors, "darker"),
+        "black":       map-get($theme-colors, "black"),
+        "red":         map-get($theme-colors, "red")
+);
+$table-border-width: 0;
+$table-cell-padding-y: 0.2rem;
+
+// Checkboxes
+$form-check-input-border-radius:          0;
+$form-check-input-focus-border:           none;
+$form-check-input-width:                  1.75em;
+$form-check-input-focus-box-shadow:       0 0 0 0.25rem rgba(204, 204, 204, 0.4);
+$form-check-input-bg:                     map-get($theme-colors, "dark");
+$form-check-input-checked-color:          map-get($theme-colors, "darker");
+$form-check-input-checked-bg-color:       map-get($theme-colors, "bright");
+$form-check-input-checked-border-color:   #00000000;
+
+// tooltips settings
+$tooltip-max-width:                 200px;
+$tooltip-color:                     white;
+$tooltip-bg:                        map-get($theme-colors, "darkgrey");
+$tooltip-opacity:                   1.0;
+$tooltip-margin:                    0;
+$tooltip-arrow-width:               .8rem;
+$tooltip-arrow-height:              .4rem;
+$tooltip-arrow-color:               $tooltip-bg;
+
+// Dropdown settings
+$dropdown-bg:                       map-get($theme-colors, "darkgrey");
+$dropdown-link-hover-bg:            map-get($theme-colors, "darker");
+$dropdown-link-active-bg:           map-get($theme-colors, "darker");
+$dropdown-link-color:               map-get($theme-colors, "grey");
+$dropdown-link-hover-color:         map-get($theme-colors, "white");
+$zindex-dropdown:                   1025;
+
+// Modal
+$modal-content-bg:                  map-get($theme-colors, "darker");
+
+// Close button
+$btn-close-color:                   map-get($theme-colors, "bright");
+
+@import "../bootstrap/scss/bootstrap";
+@import "general";
+@import "bs-like";

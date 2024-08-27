@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ name }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+{{>partials/navbar}}
+    <h1 class="m-2 text-center">Welcome to Ventilator.</h1>
+    <p class="m-1 text-center">Air your dirty laundry, one vent at a time!</p>
+    {{#if logged_in_user}}
+        {{> partials/post_form}}
+    {{/if}}
+    {{#if posts_with_username_and_time}}
+        <div class="container m-auto d-flex flex-wrap justify-content-between">
+            {{> partials/lists}}
+        </div>
+    {{/if}}
+{{>partials/footer}}
+</body>
+</html>

@@ -1,0 +1,7 @@
+{{#each posts_with_username_and_time}}
+<div class="w-25 bg-darkgrey m-3 p-3 rounded rounded-5 position-relative fit-h">
+    <b>{{{post.content}}}</b>
+    <p class="text-dark-purple">- {{post.username}}</p>
+    <i class="position-absolute bottom-0 end-0 pb-3 pe-3 d-block">{{time}}</i>
+</div>
+{{/each}}

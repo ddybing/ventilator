@@ -1,0 +1,5 @@
+/target
+
+# Temporary SQLite files
+*sqlite-wal
+*sqlite-shm

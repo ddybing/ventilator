@@ -1,0 +1,14 @@
+<!-- This is the navigation bar -->
+<nav class="navbar bg-light">
+    <div class="container-fluid">
+        <a class="text-logo text-highlight text-outline" href="/">
+            <img src="/static/img/favicon.ico" alt="Ventilator logo" width="42" height="42">
+            <div>entilator</div>
+        </a>
+        {{#if logged_in_user}}
+            <a>Hi {{logged_in_user.name}}</a>
+        {{else}}
+            <a href="/login">Login</a>
+        {{/if}}
+    </div>
+</nav>

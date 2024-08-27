@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ name }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+{{> partials/navbar}}
+<section>
+    <div class="container w-50 p-4 bg-darkgrey">
+        {{#if error_msg }}
+            <h3 class="text-red">{{error_msg}}</h3>
+        {{/if}}
+        <h2>Log in to existing account</h2>
+        <i class="text-highlightnt">Smash in your username and password, and start smashing out your complaints.</i><br/>
+        <form action="/login" method="post">
+                <label for="username">Username</label>
+                <input name="username" id="username" type="text" class="form-control" placeholder="Username"/>
+                <label for="password">Password</label>
+                <input name="password" id="password" type="password" class="form-control" placeholder="password"/>
+                <br/>
+                <input type="submit" class="form-control btn btn-highlightnt" value="Log in"/>
+        </form>
+        <br/>
+        <i class="text-end d-block">Not a user yet, c'mon <a href="/register">smash this</a></i>
+    </div>
+</section>
+{{> partials/footer}}
+</body>
+</html>

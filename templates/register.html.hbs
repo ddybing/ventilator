@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ name }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+{{> partials/navbar}}
+<section>
+    <div class="container w-50 p-4 bg-darkgrey">
+        {{#if error_msg }}
+            <h3 class="text-red">{{error_msg}}</h3>
+        {{/if}}
+        <h2>Register new account</h2>
+        <i class="text-highlightnt">Smash up a new account, and start smashing out your complaints.</i><br/>
+        <form action="/register" method="post">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" class="form-control" placeholder="Username"/>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" class="form-control" placeholder="Password"/>
+            <label for="password2">Password again</label>
+            <input id="password2" name="password2" type="password" class="form-control" placeholder="Again please"/>
+            <br/>
+            <input type="submit" class="form-control btn btn-highlightnt" value="Register"/>
+        </form>
+        <br/>
+        <i class="text-end d-block">Have a user afterall? <a href="/login">Smash this</a></i>
+    </div>
+</section>
+{{> partials/footer}}
+</body>
+</html>

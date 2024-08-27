@@ -1,0 +1,50 @@
+* {
+  scrollbar-color: map-get($theme-colors, "highlight") #181c20 !important;
+  scrollbar-width: 10px !important;
+  /*opacity: 1 !important;*/
+  /*visibility: visible !important;*/
+}
+::selection {
+  background: map-get($theme-colors, "highlight");
+  color: #FFF; /*var(--bs-light-blue);*/
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.logo {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text-logo {
+  font-size: $h3-font-size;
+  display: flex;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 2;
+  padding-right: 20px;
+}
+
+.image-content {
+  flex: 1;
+}
+
+footer {
+  position: sticky;
+  top: 100vh;
+}

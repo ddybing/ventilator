@@ -1,0 +1,24 @@
+.aspect-ratio-1x1 {
+  aspect-ratio: 1/1;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px #000000;
+  /*text-shadow:
+          1px 1px 0 #000,
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000;*/
+}
+
+min-w-25 {
+  min-width: 25%;
+}
+
+.fit-h{
+  height: fit-content;
+}
+.fit-w{
+  width: fit-content;
+}

@@ -1,0 +1,2 @@
+[global.databases]
+vent_db = { url = "ventilator_db.sqlite", pool_size = 10 }
